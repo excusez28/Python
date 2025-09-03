@@ -1,0 +1,24 @@
+print("Hello")
+#set of integers
+my_set = {1,5,6}
+print("my_set")
+
+#set of mixed datatypes
+my_set = {1.0, "hello", (1,2,3,4)}
+print("my_set")
+
+#set cannot have dublicates
+my_set = {2,2,4,4,7}
+print("my_set")
+
+#we can make set from a list
+my_set = set([1,2,3])
+print("my_set")
+
+#remove a number from a set
+num_set = set([0,2,3,5])
+print("Orginial set: ")
+print("num_set")
+num_set.pop()
+print("After removing the saying thing from a set: ")
+print("num_set" , "\n")
