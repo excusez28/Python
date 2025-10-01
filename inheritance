@@ -1,0 +1,37 @@
+class Person(object):
+    def __init__(self, name, idnumber):
+        self.name = name
+        self.idnumber = idnumber
+    def display(self):
+        print(self.name)
+        print(self.idnumber)
+class Employee(Person):
+    def __init__(self, name, idnumber, salary, post):
+        self.salary = salary
+        self.post = post
+
+        Person.__init__(self, name, idnumber)
+a = Employee('Rina', 223030, 2222, "Intern")
+a.display()
+
+#super penguin
+
+class Bird:
+    def __init__(self):
+        print("Bird is ready")
+    def whoisThis(self):
+        print("Bird")
+    def swim(self):
+        print("swim faster")
+class Penguin(Bird):
+    def __init__(self):
+        super().__init__()
+        print("Penguin is ready")
+    def whoisThis(self):
+        print("Penguin")
+    def run(self):
+        print("Run faster")
+peggy = Penguin()
+peggy.whoisThis()
+peggy.swim()
+peggy.run()
